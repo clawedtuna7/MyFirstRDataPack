@@ -8,7 +8,7 @@ The tutorial was decent, it skipped some steps here and there, but I was ultimat
 
 ####################################################################################################
 
-#install/read in libraries
+# install/read in libraries
 
      setwd("~/MyFirstRDataPack")
 
@@ -31,7 +31,7 @@ The tutorial was decent, it skipped some steps here and there, but I was ultimat
 
 #####################################################################################################
 
-#Try w your own data
+# Try w your own data
 
      install.packages("tidyverse", repos = "http://cran.us.r-project.org")
 
@@ -45,6 +45,6 @@ The tutorial was decent, it skipped some steps here and there, but I was ultimat
 
 #####################################################################################################
 
-#Check!
+# Check!
 
-#
+
