@@ -8,7 +8,7 @@ The tutorial was decent, it skipped some steps here and there, but I was ultimat
 
 ####################################################################################################
 
-# install/read in libraries
+# Install/Read in Libraries
 
      setwd("~/MyFirstRDataPack")
 
@@ -39,7 +39,7 @@ The tutorial was decent, it skipped some steps here and there, but I was ultimat
 
      census80_raw <- readr::read_csv("data-raw/1980_RawCount_Demography.csv")
 
-     Dem1980 <- census80_raw %>% mutate(totpop1980Pr = (TotPop80/3005072)*100, hisplatPr80 = (HispLat80/TotPop80)*100, whitePr80 = (white80/TotPop80)*100, aframPr80 = (black80/TotPop80)*100, asianPr80 = (asian80/TotPop80)*100, AmIndAKNatPr80 = (AmIndAKNa80/TotPop80)*100) %>% select(GISJOIN, TotPop80, totpop1980Pr, hisplatPr80, whitePr80, aframPr80, asianPr80, AmIndAKNatPr80)
+     Dem1980 <- census80_raw %>% mutate(totpop1980Pr = (TotPop80/3005072)*100, hisplatPr80 = (HispLat80/TotPop80)*100, whitePr80 = (white80/TotPop80)*100, aframPr80 =         (black80/TotPop80)*100, asianPr80 = (asian80/TotPop80)*100, AmIndAKNatPr80 = (AmIndAKNa80/TotPop80)*100) %>% select(GISJOIN, TotPop80, totpop1980Pr,                    hisplatPr80, whitePr80, aframPr80, asianPr80, AmIndAKNatPr80)
             # standardize data
      usethis::use_data(Dem1980, overwrite = TRUE)
 
